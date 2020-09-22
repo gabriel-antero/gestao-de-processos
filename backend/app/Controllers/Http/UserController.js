@@ -30,11 +30,7 @@ class UserController {
         return response.status(401).send({message: validation.messages()});
       }
 
-      const {username, email, password, key} = request.all();
-
-      if(key !== 'test'){
-        return response.status(500).send({ error: `Key errada`})
-      }
+      const {username, email, password} = request.all();
 
       const user = await User.create({username, email, password})
 
