@@ -21,7 +21,6 @@ const SignUp = () => {
     username,
     email,
     password,
-    key,
    }) => {
 
     try {
@@ -29,7 +28,6 @@ const SignUp = () => {
         username,
         email,
         password,
-        key,
       });
 
       history.push('/');
@@ -66,14 +64,6 @@ const SignUp = () => {
             placeholder="Senha"
             type="password"
             error={errors.password?.message}
-          />
-
-          <Input
-            name="key"
-            register={register}
-            label="Key"
-            placeholder="Key"
-            error={errors.email?.message}
           />
 
           <Button type="submit">Criar conta</Button>
