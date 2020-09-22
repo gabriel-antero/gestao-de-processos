@@ -46,7 +46,7 @@ adonis serve --dev
 - /validar: Responsável por listar tados os clients, é preciso estar autenticado.
 - /validar/:Id: Responsável por editar se um cliente está validado ou não, é preciso estar autenticado.
 
-## :question: Examplos de requisições
+## :question: Exemplos de requisições
 - /user
 ```
 {
